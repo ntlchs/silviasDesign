@@ -3,30 +3,87 @@
   src: url(../assets/Comfortaa-VariableFont_wght.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pinkBg {
+  background-color: #ffe5ec;
+}
+
 html {
-  background-color: #f1f5f9;
+  background-color: #fff;
   font-family: Comfortaa;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  /* line-height: 1.5; */
 }
 
-* {
-  box-sizing: border-box;
+#pageContent {
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 15vh;
+  bottom: 10vh;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
 }
 
 h1 {
-  margin: 1rem 0;
   font-size: 2.5rem;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: #4c1d95;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover,
+a:focus {
+  background-color: #dbcfeb;
+  color: #4c1d95;
+}
+
+.dark a:hover,
+a:focus {
+  background-color: #4c1d95;
+  color: #dbcfeb;
+}
+
+.navLinks {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  display: none;
+  margin: 0;
+}
+
+.navLinks a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .hamburger {
-  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -35,44 +92,11 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
-}
-
-.navLinks {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-}
-
-.navLinks a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.navLinks a:hover,
-a:focus {
-  background-color: #ff9776;
+  background-color: #000;
 }
 
 .expanded {
   display: unset;
-}
-
-.dark body {
-  background-color: #0d0950;
-  color: #fff;
-}
-
-.dark .nav-links a {
-  color: #fff;
 }
 
 @media screen and (min-width: 636px) {
@@ -86,7 +110,6 @@ a:focus {
 
   .navLinks a {
     display: inline-block;
-    padding: 15px 20px;
   }
   .hamburger {
     display: none;

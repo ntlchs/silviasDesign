@@ -1,11 +1,20 @@
 ---
 import Hamburger from "../components/Hamburger.astro";
 import Navigation from "../components/Navigation.astro";
-import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header>
+<header class="pinkBg">
   <Hamburger />
-  <ThemeIcon />
   <Navigation />
 </header>
+
+<style>
+  header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15vh;
+    right: 0px;
+    overflow: hidden;
+  }
+</style>

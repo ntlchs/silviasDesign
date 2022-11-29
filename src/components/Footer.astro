@@ -1,19 +1,38 @@
 ---
 import Social from "./Social.astro";
 
-const address = "Av. Maurício Cardoso, - Feliz/RS";
+const address = "Av. Maurício Cardoso, 123 - Feliz/RS";
 ---
 
-<footer>
-  <Social platform="instagram" username="silviasdesign" />
-  <Social platform="facebook" username="silvia" />
+<footer class="pinkBg">
+  <div id="social">
+    <Social platform="instagram" username="silviasdesign" />
+    <Social platform="facebook" username="silvia" />
+  </div>
   <p>{address}</p>
 </footer>
 
 <style>
   footer {
+    background-color: white;
+    height: fit-content;
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vh;
+    position: absolute;
+    bottom: 0px;
+    height: 10vh;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+  }
+
+  p,
+  #social {
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
   }
 </style>
