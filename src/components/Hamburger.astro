@@ -1,8 +1,10 @@
 ---
+import Navigation from "../components/Navigation.astro";
 ---
 
-<div class="hamburger">
-  <span class="line"></span>
-  <span class="line"></span>
-  <span class="line"></span>
-</div>
+<input type="checkbox" id="hamburger-input" />
+<label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+    <Navigation />
+  </nav>
+</label>

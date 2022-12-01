@@ -3,18 +3,17 @@
   src: url(../assets/Comfortaa-VariableFont_wght.ttf);
 }
 
+.pinkBg {
+  background-color: rgba(250, 0, 200, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.pinkBg {
-  background-color: #ffe5ec;
-}
-
 html {
-  background-color: #fff;
   font-family: Comfortaa;
 }
 
@@ -25,7 +24,6 @@ body {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  /* line-height: 1.5; */
 }
 
 #pageContent {
@@ -33,85 +31,25 @@ body {
   justify-content: flex-start;
   position: absolute;
   top: 15vh;
-  bottom: 10vh;
-  left: 0px;
-  right: 0px;
-  overflow: auto;
+  bottom: 8vh;
+  overflow: scroll;
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 14px;
 }
 
 a {
-  color: white;
   text-decoration: none;
   text-align: center;
-  color: #4c1d95;
-}
-
-a:visited {
-  color: #000000;
+  font-size: 14px;
 }
 
 a:hover,
 a:focus {
-  background-color: #dbcfeb;
-  color: #4c1d95;
-}
-
-.dark a:hover,
-a:focus {
-  background-color: #4c1d95;
-  color: #dbcfeb;
-}
-
-.navLinks {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  display: none;
-  margin: 0;
-}
-
-.navLinks a {
-  display: block;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.hamburger {
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #000;
-}
-
-.expanded {
-  display: unset;
-}
-
-@media screen and (min-width: 636px) {
-  .navLinks {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .navLinks a {
-    display: inline-block;
-  }
-  .hamburger {
-    display: none;
-  }
+a:visited {
 }

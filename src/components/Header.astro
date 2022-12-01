@@ -1,20 +1,25 @@
 ---
 import Hamburger from "../components/Hamburger.astro";
-import Navigation from "../components/Navigation.astro";
 ---
 
 <header class="pinkBg">
   <Hamburger />
-  <Navigation />
 </header>
 
 <style>
-  header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 15vh;
-    right: 0px;
-    overflow: hidden;
+  @media screen and (min-width: 636px) {
+    header {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 10vh;
+      right: 0px;
+      overflow: hidden;
+    }
+    header a {
+      font-size: 50px;
+      display: flex;
+      justify-content: space-around;
+    }
   }
 </style>
