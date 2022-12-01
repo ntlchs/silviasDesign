@@ -1,25 +1,19 @@
 ---
-import Hamburger from "../components/Hamburger.astro";
+import Navigation from "./Navigation.astro";
 ---
 
 <header class="pinkBg">
-  <Hamburger />
+  <Navigation />
+  <object data="/../src/assets/logos/logo_small-cropped.svg"></object>
 </header>
 
 <style>
-  @media screen and (min-width: 636px) {
-    header {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      height: 10vh;
-      right: 0px;
-      overflow: hidden;
-    }
-    header a {
-      font-size: 50px;
-      display: flex;
-      justify-content: space-around;
-    }
+  header {
+    display: flex;
+  }
+  object {
+    max-width: 12rem;
+    margin: auto;
+    object-fit: cover;
   }
 </style>

@@ -1,55 +1,34 @@
-@font-face {
-  font-family: Comfortaa;
-  src: url(../assets/Comfortaa-VariableFont_wght.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.pinkBg {
-  background-color: rgba(250, 0, 200, 0.1);
-}
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti:wght@400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: Comfortaa;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
-}
-
-#pageContent {
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  top: 15vh;
-  bottom: 8vh;
-  overflow: scroll;
-  padding: 1rem;
+  font-family: Montserrat, sans-serif;
 }
 
 h1 {
-  font-size: 14px;
+  font-family: Calligraffitti, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 14px;
+.golden {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
 }
-
-a:hover,
-a:focus {
-  font-weight: bold;
-}
-
-a:visited {
-}
+/* @media screen and (min-width: 636px) {
+} */
