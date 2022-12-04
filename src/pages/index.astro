@@ -1,11 +1,60 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Session from "../components/Session.astro";
+import Social from "../components/Social.astro";
 const pageTitle = "Silvia's Design";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Session id="Serviços" />
+  <Session title="Agendamento" subtitle="Agende seu horário pelo whatsapp">
+    <div id="schedule">
+      <button id="whatsapp_btn">
+        <a href="/">
+          <img
+            id="whatsapp_img"
+            src="/../src/assets/logos/whatsapp.png"
+            alt=""
+          />
+        </a>
+      </button>
+    </div>
+  </Session>
+
+  <Session
+    title="Serviços"
+    subtitle="Conheça os serviços oferecidos"
+    id="services"
+  >
+    <div id="services">
+      <div class="service">
+        <div class="service_img"></div>
+        <h3>Design de Sobrancelhas Simples</h3>
+      </div>
+      <div class="service">
+        <div class="service_img"></div>
+        <h3>Design de Sobrancelhas com Henna</h3>
+      </div>
+    </div>
+  </Session>
+  <Session title="Preços" subtitle="Confira os preços e promoções">
+    <table></table>
+  </Session>
+  <Session title="Endereço">
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d663.5825555945996!2d-51.30713063189963!3d-29.453832417549858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951eaae246b1848f%3A0xc61b43367a1a291!2sFeliz%2C%20RS%2C%2095770-000!5e0!3m2!1spt-BR!2sbr!4v1669919275916!5m2!1spt-BR!2sbr"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </Session>
+  <Session title="Contato">
+    <div id="social">
+      <Social platform="instagram" username="silvia.design" />
+      <Social platform="facebook" username="silvia" />
+    </div>
+  </Session>
   <!-- no slot:
         banner (últimas notícias etc)
         serviços
@@ -13,3 +62,77 @@ const pageTitle = "Silvia's Design";
         endereço (com mapa)
         contato -->
 </BaseLayout>
+
+<style>
+  #services {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .service_img {
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 200px;
+    background-color: black;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  #contato {
+    display: flex;
+    justify-content: space-between;
+  }
+  #schedule {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container * {
+    display: flex;
+    max-width: 100%;
+  }
+
+  #whatsapp_btn {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+  }
+
+  #whatsapp_img {
+    border-radius: 100%;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 8px;
+    height: 100%;
+    width: 100%;
+  }
+
+  #whatsapp_btn:active {
+    transform: scale(1.125);
+    transition-duration: 0.35s;
+  }
+
+  @media (min-width: 768px) {
+    #whatsapp_btn {
+      font-size: 1.5rem;
+    }
+    #whastapp_btn:hover {
+      transform: scale(1.025);
+      transition-duration: 0.35s;
+    }
+  }
+</style>

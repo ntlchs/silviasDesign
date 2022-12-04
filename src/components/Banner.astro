@@ -8,32 +8,27 @@
       alt=""
     />
   </div>
-  <div class="quote golden">
+  <div class="quote">
     <p>
-      Design de sobrancelhas é muito mais do que remover pelos... É renovar a
-      sua autoestima!
+      "Design de sobrancelhas é muito mais do que remover pelos... É renovar a
+      sua autoestima!"
     </p>
   </div>
 </div>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    min-height: 10rem;
-    max-width: 90vw;
-  }
-
-  .banner_img {
-    min-height: inherit;
-    object-fit: fill;
-    max-width: 45vw;
-  }
-  p {
-    font-size: 2rem;
-    padding: 1rem;
-    text-align: center;
+  #quote_wrapper {
+    border-image: url("../assets/logos/golden_frame.png") 10;
   }
   .quote {
+    flex-direction: column;
+    background: white;
+  }
+
+  p {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
   }
 </style>

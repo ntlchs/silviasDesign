@@ -1,15 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Calligraffitti:wght@400&display=swap");
+@font-face {
+  font-family: "Frutilla Script";
+  src: url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.eot");
+  src: url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.svg#Frutilla Script")
+      format("svg");
+}
 
-* {
+html {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-family: "Frutilla Script", sans-serif;
+  font-size: 5rem;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
 }
 
-h1 {
-  font-family: Calligraffitti, sans-serif;
+#pageContent {
+  margin: 1rem;
+  max-width: calc(100vw - 1rem);
 }
 
 .golden {

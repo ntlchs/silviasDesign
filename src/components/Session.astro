@@ -1,17 +1,24 @@
 ---
+const { title, subtitle } = Astro.props;
 ---
 
-<h1 class="golden"><span>Title</span></h1>
-<h2>Subtitle</h2>
-<p>Description</p>
+<h1 class="golden"><span>{title}</span></h1>
+<h2>{subtitle}</h2>
+<slot />
 
 <style>
   h1 {
-    width: 100%;
     text-align: center;
     line-height: 0.1rem;
+    list-style: lower-alpha;
+    margin: 3rem 0;
+    text-decoration: solid;
   }
   h1 span {
-    padding: 0 10px;
+    align-self: baseline;
+    max-width: max-content;
+  }
+  h2 {
+    text-align: center;
   }
 </style>
