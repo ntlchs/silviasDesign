@@ -1,15 +1,39 @@
 ---
-const address = "Av. Maurício Cardoso, 122 - Feliz/RS";
+const address1 = "Av. Maurício Cardoso, 122";
+const address2 = "Centro - Feliz/RS";
 ---
 
-<footer class="pinkBg">
-  <p>{address}</p>
+<footer>
+  <p>{address1}</p>
+  <p>{"(Mezanino da loja C&S Malhas)"}</p>
+  <p>{address2}</p>
+  <div id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d663.5825555945996!2d-51.30713063189963!3d-29.453832417549858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951eaae246b1848f%3A0xc61b43367a1a291!2sFeliz%2C%20RS%2C%2095770-000!5e0!3m2!1spt-BR!2sbr!4v1669919275916!5m2!1spt-BR!2sbr"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </footer>
 
 <style>
   footer {
+    background-color: black;
+    color: rgb(180, 180, 180);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  p {
+    padding: 0.1rem;
+    margin: 0;
+  }
+
+  iframe {
+    padding-top: 1rem;
+    height: 66vh;
   }
 </style>
