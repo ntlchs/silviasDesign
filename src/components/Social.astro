@@ -1,0 +1,36 @@
+---
+const { socialNetwork } = Astro.props;
+
+const socialInfo = {
+  instagram: {
+    href: "...",
+    src: "instagram.svg",
+    alt: "Instagram",
+  },
+  whatsapp: {
+    href: "...",
+    src: "whatsapp.svg",
+    alt: "WhatsApp",
+  },
+  facebook: {
+    href: "...",
+    src: "facebook.svg",
+    alt: "Facebook",
+  },
+};
+
+const networkInfo = socialInfo[socialNetwork];
+---
+
+<a href={networkInfo.href}>
+  <img class="social_icon" src={networkInfo.src} alt={networkInfo.alt} />
+</a>
+
+<style>
+  img {
+    background: none;
+    border: none;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+</style>

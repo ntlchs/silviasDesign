@@ -3,19 +3,12 @@ const { title, subtitle } = Astro.props;
 ---
 
 <div id="page_content">
-  <h1 class="golden"><span>{title}</span></h1>
+  <h1 class="golden line"><span>{title}</span></h1>
   <h2>{subtitle}</h2>
   <slot />
 </div>
 
 <style>
-  h1 {
-    text-align: center;
-    line-height: 2px;
-    list-style: lower-alpha;
-    text-decoration: solid;
-    margin: 2rem;
-  }
   h1 span {
     align-self: baseline;
     max-width: max-content;

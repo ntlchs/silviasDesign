@@ -1,9 +1,9 @@
 ---
-const { name, price } = Astro.props;
+const { name, price, publicPath } = Astro.props;
 ---
 
 <div class="service">
-  <img class="service_img" />
+  <img class="service_img" src={publicPath} />
   <h3>{name}, R${price}</h3>
 </div>
 
@@ -12,5 +12,9 @@ const { name, price } = Astro.props;
     font-weight: normal;
     margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+
+  img {
+    max-width: 10rem;
   }
 </style>

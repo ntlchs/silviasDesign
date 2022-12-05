@@ -1,21 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/zahira-script");
 
-@font-face {
-  font-family: "Frutilla Script";
-  src: url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.eot");
-  src: url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/18408cd785e182e85092bbd4146e2260.svg#Frutilla Script")
-      format("svg");
-}
-
 html {
   left: 0;
   right: 0;
@@ -49,6 +34,7 @@ header {
 header img {
   margin: auto;
   height: 100%;
+  padding-top: 20px;
 }
 
 .golden {
@@ -99,4 +85,23 @@ header img {
 #whatsapp_btn:hover,
 #whatsapp_btn:active {
   scale: 1.025;
+}
+
+.social_icon {
+  max-width: 15vw;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  text-align: center;
+  line-height: 2px;
+  list-style: lower-alpha;
+  text-decoration: solid;
+  margin: 2rem auto 2rem auto;
+  min-width: 90vw;
+  max-width: 480px;
 }

@@ -1,9 +1,18 @@
 ---
+import Social from "../components/Social.astro";
+
 const address1 = "Av. Maurício Cardoso, 122";
 const address2 = "Centro - Feliz/RS";
 ---
 
 <footer>
+  <div id="social">
+    <Social socialNetwork="instagram" />
+    <Social socialNetwork="whatsapp" />
+    <Social socialNetwork="facebook" />
+  </div>
+  <h1 class="golden line"></h1>
+
   <p>{address1}</p>
   <p>{"(Mezanino da loja C&S Malhas)"}</p>
   <p>{address2}</p>
@@ -20,7 +29,7 @@ const address2 = "Centro - Feliz/RS";
 <style>
   footer {
     background-color: black;
-    color: rgb(180, 180, 180);
+    color: rgb(176, 176, 176);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -30,10 +39,20 @@ const address2 = "Centro - Feliz/RS";
   p {
     padding: 0.1rem;
     margin: 0;
+    font-size: 1.1rem;
   }
 
   iframe {
     padding-top: 1rem;
     height: 66vh;
+    width: 90vw;
+  }
+
+  #social {
+    justify-content: center;
+  }
+
+  h1 {
+    height: 2px;
   }
 </style>
