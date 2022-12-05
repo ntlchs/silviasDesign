@@ -3,12 +3,17 @@ const { title, subtitle } = Astro.props;
 ---
 
 <div id="page_content">
-  <h1 class="golden line"><span>{title}</span></h1>
+  <div id="title">
+    <h1 class="golden line"><span>{title}</span></h1>
+  </div>
   <h2>{subtitle}</h2>
   <slot />
 </div>
 
 <style>
+  #title {
+    padding-bottom: 0.1rem;
+  }
   h1 span {
     font-size: 60px;
     align-self: baseline;

@@ -1,4 +1,6 @@
 ---
+import WhatsAppBtn from "../components/WhatsAppBtn.astro";
+
 const open = "O estúdio está aberto!";
 const closed = "O estúdio está fechado no momento.";
 let message = "";
@@ -61,20 +63,48 @@ console.log(checkOpeningHours());
 
 <p id="message">{message}</p>
 <div id="table">
-  <p>Segunda a sexta-feira</p>
-  <p>08:00 - 18:00</p>
-  <p>Sábado</p>
-  <p>08:00 - 12:00</p>
+  <p class="day">Segunda a sexta</p>
+  <p class="hour">08:00 - 18:00</p>
+  <p class="day">Sábados</p>
+  <p class="hour">08:00 - 12:00</p>
 </div>
+<div id="blank"></div>
+<WhatsAppBtn btn_class="golden_btn" />
 
 <style>
+  div {
+    margin-bottom: 20px;
+  }
+  #op_h {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #message {
     font-size: 22px;
+    padding: 0;
   }
   #table {
     display: grid;
-    grid-template-columns: 200px 150px;
-    padding-bottom: 20px;
-    justify-items: right;
+    gap: 0;
+    grid-template-columns: 180px 180px;
+    margin: 2px;
+    justify-content: center;
+  }
+  #table > p {
+    font-size: 22px;
+    padding: 0.2rem;
+    margin: 0 0.5rem;
+  }
+  #blank {
+    height: 1rem;
+  }
+
+  .day {
+    text-align: right;
+  }
+
+  .hour {
+    text-align: left;
   }
 </style>
