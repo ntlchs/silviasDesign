@@ -64,7 +64,6 @@ header img {
 
 #whatsapp_btn {
   font-family: inherit;
-  background: none;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -72,6 +71,9 @@ header img {
   padding: 1rem;
   border: none;
   letter-spacing: 0.1rem;
+}
+
+.golden_btn {
   background: linear-gradient(
     to right,
     #bf953f,
@@ -82,13 +84,20 @@ header img {
   );
 }
 
+.white_btn {
+  background: white;
+  max-width: 480px;
+  margin: 1rem auto;
+}
+
 #whatsapp_btn:hover,
 #whatsapp_btn:active {
   scale: 1.025;
 }
 
 .social_icon {
-  max-width: 15vw;
+  max-width: 60px;
+  fill: rgb(176, 176, 176);
 }
 
 #social {

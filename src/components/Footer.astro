@@ -1,18 +1,20 @@
 ---
 import Social from "../components/Social.astro";
+import WhatsAppBtn from "./WhatsAppBtn.astro";
 
 const address1 = "Av. Maurício Cardoso, 122";
 const address2 = "Centro - Feliz/RS";
 ---
 
 <footer>
+  <WhatsAppBtn btn_class="white_btn" />
   <div id="social">
     <Social socialNetwork="instagram" />
     <Social socialNetwork="whatsapp" />
     <Social socialNetwork="facebook" />
   </div>
   <h1 class="golden line"></h1>
-
+  <p id="phone">(51) 99714-0042</p>
   <p>{address1}</p>
   <p>{"(Mezanino da loja C&S Malhas)"}</p>
   <p>{address2}</p>
@@ -24,6 +26,9 @@ const address2 = "Centro - Feliz/RS";
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  <h1 class="golden line"></h1>
+
+  <p>Copyright Natália Chies 2022</p>
 </footer>
 
 <style>
@@ -37,9 +42,13 @@ const address2 = "Centro - Feliz/RS";
   }
 
   p {
-    padding: 0.1rem;
+    padding: 0.2rem;
     margin: 0;
     font-size: 1.1rem;
+  }
+
+  h1 {
+    height: 2px;
   }
 
   iframe {
@@ -52,7 +61,12 @@ const address2 = "Centro - Feliz/RS";
     justify-content: center;
   }
 
-  h1 {
-    height: 2px;
+  #phone {
+    padding-bottom: 1rem;
+  }
+
+  .line {
+    margin: 1rem 0;
+    justify-self: center;
   }
 </style>

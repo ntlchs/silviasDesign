@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
 import Service from "../components/Service.astro";
+import WhatsAppBtn from "../components/WhatsAppBtn.astro";
 
 const pageTitle = "Silvia's Design";
 ---
@@ -22,7 +23,7 @@ const pageTitle = "Silvia's Design";
     <Card title="Horários">
       <p>Segunda a sexta 08:30-18:30</p>
       <p>Sábados: 08:30-16:30</p>
-      <button id="whatsapp_btn">Agende pelo WhatSapp</button>
+      <WhatsAppBtn btn_class="golden_btn" />
     </Card>
     <Card title="Serviços" subtitle="Conheça os serviços oferecidos">
       <Service
