@@ -99,7 +99,7 @@ p {
 .line {
   text-align: center;
   line-height: 1px;
-  max-height: 2px;
+  max-height: 1.5px;
   list-style: lower-alpha;
   text-decoration: solid;
   margin: 2rem auto 2rem auto;
