@@ -114,3 +114,19 @@ header img {
   min-width: 90vw;
   max-width: 480px;
 }
+
+#services {
+  display: flex;
+  flex-direction: column;
+}
+
+#opening_hours {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 670px) {
+  #services {
+    flex-direction: row;
+    flex: 33.33%;
+  }
+}
