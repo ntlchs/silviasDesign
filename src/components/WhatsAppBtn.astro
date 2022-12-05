@@ -2,4 +2,18 @@
 const { btn_class } = Astro.props;
 ---
 
-<a id="whatsapp_btn" class={btn_class}>Agende pelo WhatSapp</a>
+<a
+  id="whatsapp_btn"
+  href="https://wa.me/5551997140042?text=Olá!%20Gostaria%20de%20agendar%20um%20horário!"
+  class={btn_class}>Agende pelo WhatSapp</a
+>
+
+<style>
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+</style>
