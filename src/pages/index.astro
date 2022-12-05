@@ -1,9 +1,11 @@
 ---
 import "../styles/global.css";
+
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
 import Service from "../components/Service.astro";
 import WhatsAppBtn from "../components/WhatsAppBtn.astro";
+import OpeningHours from "../components/openingHours.astro";
 
 const pageTitle = "Silvia's Design";
 ---
@@ -21,10 +23,7 @@ const pageTitle = "Silvia's Design";
       <img id="logo" src="logo_big.svg" />
     </header>
     <Card title="Horários">
-      <div id="opening_hours">
-        <p>Segunda a sexta 08:30-18:30</p>
-        <p>Sábados: 08:30-16:30</p>
-      </div>
+      <OpeningHours />
       <WhatsAppBtn btn_class="golden_btn" />
     </Card>
     <Card title="Serviços" subtitle="Conheça os serviços oferecidos">

@@ -17,7 +17,6 @@ h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   font-size: medium;
 }
 
@@ -63,7 +62,16 @@ header img {
   min-height: 200px;
   min-width: 200px;
   border-radius: 200px;
-  background-color: black;
+  border-image: linear-gradient(
+      150deg,
+      #bf953f,
+      #fcf6ba,
+      #b38728,
+      #fbf5b7,
+      #aa771c
+    )
+    1;
+  border: 0.4rem solid transparent;
 }
 
 #whatsapp_btn {
@@ -122,6 +130,7 @@ header img {
 #services {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
 #opening_hours {

@@ -1,0 +1,80 @@
+---
+const open = "O estúdio está aberto!";
+const closed = "O estúdio está fechado no momento.";
+let message = "";
+
+function checkOpeningHours() {
+  const currentDate = new Date();
+  const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const currentWeekday = weekdays[currentDate.getDay()];
+  const openingHours = {
+    Sunday: {
+      open: "closed",
+    },
+    Monday: {
+      open: 9,
+      close: 18,
+    },
+    Tuesday: {
+      open: 9,
+      close: 18,
+    },
+    Wednesday: {
+      open: 9,
+      close: 18,
+    },
+    Thursday: {
+      open: 9,
+      close: 18,
+    },
+    Friday: {
+      open: 9,
+      close: 18,
+    },
+    Saturday: {
+      open: 9,
+      close: 18,
+    },
+  };
+  var currentHour = currentDate.getHours();
+  if (
+    currentHour >= openingHours[currentWeekday].open &&
+    currentHour < openingHours[currentWeekday].close
+  ) {
+    message = open;
+  } else {
+    message = closed;
+  }
+  return { message };
+}
+
+console.log(checkOpeningHours());
+---
+
+<p id="message">{message}</p>
+<div id="table">
+  <p>Segunda a sexta-feira</p>
+  <p>08:00 - 18:00</p>
+  <p>Sábado</p>
+  <p>08:00 - 12:00</p>
+</div>
+
+<style>
+  #message {
+    font-size: 22px;
+  }
+  #table {
+    display: grid;
+    grid-template-columns: 200px 150px;
+    padding-bottom: 20px;
+    justify-items: right;
+  }
+</style>
