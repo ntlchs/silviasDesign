@@ -46,7 +46,7 @@ function checkOpeningHours() {
       close: 18,
     },
   };
-  var currentHour = currentDate.getHours();
+  let currentHour = currentDate.getHours();
   if (
     currentHour >= openingHours[currentWeekday].open &&
     currentHour < openingHours[currentWeekday].close
@@ -57,8 +57,6 @@ function checkOpeningHours() {
   }
   return { message };
 }
-
-console.log(checkOpeningHours());
 ---
 
 <p id="message">{message}</p>
