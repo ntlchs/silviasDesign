@@ -25,14 +25,7 @@ p {
 }
 
 .golden {
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
 }
 
 .service {
@@ -46,15 +39,7 @@ p {
   min-height: 200px;
   min-width: 200px;
   border-radius: 200px;
-  border-image: linear-gradient(
-      150deg,
-      #bf953f,
-      #fcf6ba,
-      #b38728,
-      #fbf5b7,
-      #aa771c
-    )
-    1;
+  border-image: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
   border: 0.4rem solid transparent;
 }
 
@@ -70,14 +55,7 @@ p {
 }
 
 .golden_btn {
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
 }
 
 .white_btn {
