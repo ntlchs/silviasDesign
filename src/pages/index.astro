@@ -12,6 +12,23 @@ const pageTitle = "Silvia's Design";
 
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWNXB2TYM1"
+    ></script>
+    <script>
+      declare global {
+        interface Window {
+          dataLayer: any;
+        }
+      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: any[]) {
+        window.dataLayer.push(args);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TWNXB2TYM1");
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
