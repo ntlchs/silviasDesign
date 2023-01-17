@@ -1,5 +1,3 @@
-# Welcome to Silvia's Design Website!
+### Silvia's Design Website
 
-This website was made using **Astro**.
-**Credits:** Natalia Chies
-**Github:** ntlchs
+This is the source code for the [Silvia's Design website](https://silviasdesign.com), made using [Astro framework](https://astro.build/) and deployed on [Netlify](https://www.netlify.com/).
